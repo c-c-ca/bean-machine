@@ -1,3 +1,5 @@
+// Program modeling a bean machine, also known as a Galton Board.
+
 #include <iostream>
 
 using namespace std;

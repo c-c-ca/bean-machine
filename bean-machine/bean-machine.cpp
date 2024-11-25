@@ -24,7 +24,9 @@ int main() {
 	for (int i = 0; i < num_beans; i++) {
 		int pos = 0;
 		for (int j = 0; j < num_slots - 1; j++) {
-			int direction = rand() % 2;
+			int direction = rand() % 2;  // Adding 0 to the position is considered 
+			                             // a move to the left because the number 
+										 // positions on the next row grows
 			pos += direction;
 			if (should_print_path)
 				if (direction == to_left) cout << left_symbol;

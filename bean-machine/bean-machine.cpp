@@ -46,7 +46,9 @@ int main() {
         cout << i << ": " << slots[i] << "\t\t";
         int normalized_count = slots[i] * max_bucket_size / max_slot_count;
         for (int j = 0; j < normalized_count; j++) cout << bean_symbol;
-        if (0 < slots[i] && normalized_count == 0) cout << bean_symbol;
+        if (0 < slots[i] && normalized_count == 0)
+            cout << bean_symbol;  // Display at least one `bean_symbol`
+                                  // if there are more than 0 beans
         cout << '\n';
     }
 
